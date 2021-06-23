@@ -1,0 +1,93 @@
+
+.class-container {
+  font-family: "Roboto", sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.class-container h3.year {
+  font-size: 40px;
+  text-align: center;
+  border-bottom: 1px solid #b1b1b1;
+}
+
+.class-container .class {
+  box-shadow: 0 4px 16px -8px rgba(0, 0, 0, 0.4);
+  display: flex;
+  border-radius: 8px;
+  margin: 32px 0;
+}
+
+.class .class-left {
+  background: #222;
+  min-width: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #eee;
+  padding: 8px 48px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 8px 0 0 8px;
+}
+
+.class .class-left .date {
+  font-size: 56px;
+}
+
+.class .class-left .month {
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.class .class-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 24px;
+}
+
+.class .class-right h3.class-title {
+  font-size: 24px;
+  margin: 24px 0 10px 0;
+  color: #218bbb;
+  text-transform: uppercase;
+}
+
+.class .class-right .class-timing {
+  background: #fff8ba;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  padding: 8px;
+  border-radius: 16px;
+  margin: 24px 0;
+  font-size: 14px;
+}
+
+.class .class-right .class-timing img {
+  height: 20px;
+  padding-right: 8px;
+}
+
+@media (max-width: 550px) {
+  .class {
+    flex-direction: column;
+  }
+
+  .class .class-left {
+    padding: 0;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .class.class-left .class-date .date,
+  .class.class-left .class-date .month {
+    display: inline-block;
+    font-size: 24px;
+  }
+
+  .class .class-left .class-date {
+    padding: 10px 0;
+  }
+}
